@@ -1,0 +1,39 @@
+.main_navbar{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    width: 100vw;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 6px, rgba(0, 0, 0, 0.23) 0px 0px 6px;
+
+}
+.title{
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.main-sites{
+    margin: 0;
+    padding-top: 10px;
+    list-style: none;
+    li{
+        margin: 5px;
+    }
+}
+.userInfo{
+    display: flex;
+    img{
+        width: 50px;
+    }
+}
+.userInfo-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.user-welcome{
+    margin: 0;
+}
+.username{
+    margin: 0;
+}

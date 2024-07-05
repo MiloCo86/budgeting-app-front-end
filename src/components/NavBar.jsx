@@ -1,11 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import '../styles/NavBar.css'
+
+import defaultUserImg from '../assets/default-user-img.svg'
+
+
 const NavBar = () => {
   return (
-    <nav>
-        <h1> <Link to="/">Budget App!</Link></h1>
-        <ul>
+    <nav className='main_navbar'>
+        <h1 className='title'> <Link to="/">Budget App!</Link></h1>
+        <ul className='main-sites'>
             <li>
                 <Link to="/summary">Summary</Link>
             </li>
@@ -14,8 +19,11 @@ const NavBar = () => {
             </li>
         </ul>
         <div className="userInfo">
-        <h5>Welcome!</h5>
-        <p>Username</p>
+          <img src={defaultUserImg} alt="user img" />
+          <div className="userInfo-details">
+            <h5 className='user-welcome'>Welcome!</h5>
+            <p className='username'>Username</p>
+          </div>
         </div> 
     </nav>
   )

@@ -1,0 +1,55 @@
+.transaction-container{
+    display: grid;
+    justify-items: center;
+    width: 400px;
+    h2{
+        margin: 30px;
+        margin-top: 0;
+    }
+}
+.id-and-date{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.type-amount{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.static-keys{
+    height: 30px;
+    font-size: 25px;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 92%, rgba(126,150,255,1) 98%);
+}
+
+.transaction-values{
+    margin: 0;
+    align-self: center;
+    font-size: 20px;
+}
+.description{
+    height: 70px;
+}
+.description-title{
+    margin: 20px;
+}
+.amount{
+    font-size: 35px;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+.closeicon{
+    margin: 0;
+    margin-top: 20px;
+
+    justify-self: end;
+}

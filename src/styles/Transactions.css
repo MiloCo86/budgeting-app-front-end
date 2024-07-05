@@ -1,0 +1,18 @@
+.transactions-container{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+.transactions-title{
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    justify-self: center;
+}
+.transaction-element{
+    display: grid;
+    grid-template-columns: 100px 300px 100px;
+}
+.newicon{
+    justify-self: end;
+}
