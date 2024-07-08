@@ -1,0 +1,25 @@
+.summary-container{
+    width: 400px;
+    background-color: white;
+    margin-top: 20px;
+    display: grid;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    h1{
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: "Playwrite IT Moderna", cursive;
+    }
+}
+.total-summary{
+
+    h6{
+        font-size: 20px;
+        margin: 0;
+    }
+    p{
+        font-size: 30px;
+        margin: 0;
+    }
+}

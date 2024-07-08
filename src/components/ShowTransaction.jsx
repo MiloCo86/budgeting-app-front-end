@@ -46,10 +46,10 @@ const ShowTransaction = () => {
       </Link>
       <h2>Transaction Details</h2>
       <div className="icons">
-        <Link to={`/transactions/${idx}/edit`}>
+        <Link className='edit' to={`/transactions/${idx}/edit`}>
           <img src={editIcon} alt="Edit transaction"/>
         </Link>
-        <img onClick={handleDelete} src={deleteIcon} alt="Delete transaction"/>
+        <img className='delete' onClick={handleDelete} src={deleteIcon} alt="Delete transaction"/>
       </div>
       <div className="id-and-date">
         <h6 className='static-keys'>Id:</h6>

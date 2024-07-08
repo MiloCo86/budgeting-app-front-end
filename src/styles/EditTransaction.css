@@ -1,8 +1,8 @@
-.newTransaction-container{
+.editTransaction-container{
     display: grid;
 }
 
-.newTransaction-form{
+.editTransaction-form{
     margin-top: 20px;
     width: 300px;
     display: grid;
@@ -16,18 +16,18 @@
     font-size: 20px;
 }
 
-.newTransaction-CloseIcon{
+.editTransaction-CloseIcon{
     cursor: pointer;
     position: relative;
     left: 295px;
     top: -10px;
 }
-.newTransaction-CloseIcon:hover{
+.editTransaction-CloseIcon:hover{
     scale: 1.2;
     left: 325px;
 }
 
-.newTransaction-title{
+.editTransaction-title{
     font-family: "Playwrite IT Moderna", cursive;
     font-size: 15px;
     background-color: white;
@@ -37,7 +37,7 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-.newTransaction-btn{
+.editTransaction-btn{
     font-family: "Dosis", sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -48,19 +48,19 @@
     padding-top: 5px;
     padding-bottom: 5px;  
 }
-.newTransaction-btn:hover{
+.editTransaction-btn:hover{
     -webkit-box-shadow:0px 0px 17px 1px rgba(46,175,255,0.9);
     -moz-box-shadow: 0px 0px 17px 1px rgba(46,175,255,0.9);
     box-shadow: 0px 0px 17px 1px rgba(46,175,255,0.9);
 }
 
-.newTransaction-input{
+.editTransaction-input{
     padding: 5px;
     border-radius: 5px;
     border: 1px solid;
     border-color: rgb(126, 197, 255);
     margin-bottom: 5px;
 }
-.newTransaction-input:active, .newTransaction-input:focus {
+.editTransaction-input:active, .editTransaction-input:focus {
     outline: 2px solid rgba(46,175,255);
 }

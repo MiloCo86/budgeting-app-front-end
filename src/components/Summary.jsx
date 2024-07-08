@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import '../styles/Summary.css'
 
 const Summary = () => {
 
     const [transactions, setTransactions] = useState([])
-    const [total, setTotal]= useState(0)
+    const [totalAmount, setTotalAmount]= useState(0)
+    const [totalTransactions, setTotalTransactions] = useState(0)
 
     const API = import.meta.env.VITE_BASE_URL
 
@@ -18,15 +20,24 @@ const Summary = () => {
 
     useEffect(()=>{
 
-        setTotal(transactions.reduce((total,transaction)=> total+ Number(transaction.amount),0))
+        setTotalAmount(transactions.reduce((total,transaction)=> total+ Number(transaction.amount),0))
+        setTotalTransactions(transactions.length)
 
     },[transactions])
 
 
 
   return (
-    <div>
-      {total}
+    <div className='summary-container'>
+      <h1>Transactions Summary</h1>
+      <div className="total-summary">
+        <h6>Number of transactions:</h6>
+        <p>{totalTransactions}</p>
+        <h6>Total Amount:</h6>
+        <p>${totalAmount}</p>
+
+      </div>
+      
     </div>
   )
 }

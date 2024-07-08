@@ -23,6 +23,7 @@ const Transactions = () => {
   return (
     <div className='transactions-container'>
       <h3 className="transactions-title">Transactions</h3>
+      
       <Link className='newicon' to={'/transactions/new'}>
         <img src={newIcon} alt="New Transaction" />
       </Link>

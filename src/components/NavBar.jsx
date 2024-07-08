@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import '../styles/NavBar.css'
 
-import defaultUserImg from '../assets/default-user-img.svg'
+import defaultUserImg from '../assets/default-user-img.png'
 
 
 const NavBar = () => {

@@ -42,37 +42,43 @@ const NewTransaction = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <Link to={'/transactions'} className='closeicon'>
-                <img  src={closeIcon} alt="Close transaction"/>
-            </Link>
-            <fieldset>
-                <legend>New Transaction</legend>
-                <input 
+        <form className='newTransaction-container' onSubmit={handleSubmit}>
+            
+            <fieldset className='newTransaction-form'>
+                <Link to={'/transactions'} className='newTransaction-CloseIcon'>
+                    <img  src={closeIcon} alt="Close transaction"/>
+                </Link>
+                <legend className='newTransaction-title'>New Transaction</legend>
+                <label htmlFor="date">Date:</label>
+                <input
+                    className='newTransaction-input'
                     type="date"
                     placeholder="Transaction Date"
                     name="date"
                     value={newTransaction.date}
                     onChange={handleChange}
                 />
-                <br/>
-                <input 
+                <label htmlFor="description">Description:</label>
+                <input
+                    className='newTransaction-input'
                     type="text" 
                     placeholder='Description'
                     name="description"
                     value={newTransaction.description}
                     onChange={handleChange}
                 />
-                <br/>
-                <input 
-                    type="text" 
-                    placeholder='Type'
-                    name="type"
-                    value={newTransaction.type}
-                    onChange={handleChange}
-                />
-                <br/>
-                <input 
+                <label htmlFor="type">Type:</label>
+                <select className='newTransaction-input' name="type" id="type" onClick={handleChange}>
+                    <option value="" selected hidden></option>
+                    <option value="Groceries">Groceries</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Banking">Banking</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label htmlFor="amount">Amount:</label>
+                <input
+                    className='newTransaction-input' 
                     type="text"
                     placeholder='Amount'
                     name="amount"
@@ -80,7 +86,7 @@ const NewTransaction = () => {
                     onChange={handleChange}
                 />
                 <br/>
-                <input type="submit" value="Submit"/>
+                <input className='newTransaction-btn' type="submit" value="Submit"/>
             </fieldset>
         </form>
     );

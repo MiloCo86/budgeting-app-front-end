@@ -8,11 +8,29 @@
     font-optical-sizing: auto;
     font-style: normal;
     justify-self: center;
+    font-size: 30px;
+    margin-bottom: 0;
 }
 .transaction-element{
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 25px;
+    padding-left: 15px;
+    width: 450px;
+    margin: 5px;
     display: grid;
     grid-template-columns: 100px 300px 100px;
+    transition: all 500ms linear;
 }
+.transaction-element:hover{
+    -webkit-box-shadow:0px 0px 17px 1px rgba(46,119,255,0.9);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(46,119,255,0.9);
+    box-shadow: 0px 0px 17px 1px rgba(46,119,255,0.9);
+}
+
 .newicon{
+    margin-right: 20px;
     justify-self: end;
+}
+.newicon:hover{
+    scale: 1.2;
 }

@@ -9,12 +9,12 @@ const Home = () => {
     
 
   return (
-    <div>
+    <div className='home-container'>
       <h1 className='home-title'>Welcome to Budget App!</h1>
 
-      <Link to={'/summary'}>Summary</Link>
+      <Link className='home-links' to={'/summary'}>Summary</Link>
 
-      <Link to={'/transactions'}>Transactions</Link>
+      <Link className='home-links' to={'/transactions'}>Transactions</Link>
 
     </div>
   )
